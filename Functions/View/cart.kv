@@ -1,0 +1,58 @@
+#:kivy 1.11.1
+
+MainPage:
+
+<MainPage>:
+    BoxLayout:
+        orientation: 'vertical'
+
+        MenuTab:
+            id: menu
+            size_hint_y: .5
+
+        FloatArea:
+            id: cart_plan
+            size_hint_y: 4
+
+
+
+<FloatArea>:
+    
+
+          
+
+<MenuTab>:
+    cols: 3
+    rows: 2
+
+    Button:
+        id: start
+        text: 'Start'
+
+    TextInput:
+        id: function_ti
+    
+    Button:
+        id: send
+        text: 'Send'
+        on_release: root.setFunction()
+
+    
+    Button:
+        id:stop
+        text: 'Stop'
+
+    TextInput:
+        id: cordenates_ti
+    
+    Button:
+        id: send
+        text: 'Send'
+        on_release: root.setCordinates()
+
+
+    
+
+
+
+    
